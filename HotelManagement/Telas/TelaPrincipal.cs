@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace HotelManagement.Telas
 {
-    public partial class TelaPrincipal: Form
+    public partial class TelaPrincipal : Form
     {
         public TelaPrincipal()
         {
             InitializeComponent();
+        }
+
+        private void menuConsumo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TelaPrincipal_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
