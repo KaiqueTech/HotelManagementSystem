@@ -89,9 +89,38 @@
             sobreOSistemaToolStripMenuItem = new ToolStripMenuItem();
             menuSair = new ToolStripMenuItem();
             panel1 = new Panel();
-            trackBar1 = new TrackBar();
+            panel7 = new Panel();
+            monthCalendar2 = new MonthCalendar();
+            panel6 = new Panel();
+            label3 = new Label();
+            panel5 = new Panel();
+            monthCalendar1 = new MonthCalendar();
+            panel4 = new Panel();
+            label2 = new Label();
+            panel3 = new Panel();
+            lblPerfilAcesso = new Label();
+            lblNomeCargo = new Label();
+            lblNomeUsuarioLogado = new Label();
+            lblCargo = new Label();
+            lblNamePerfilAcesso = new Label();
+            lblUsuario = new Label();
+            panel2 = new Panel();
+            lblDataHora = new Label();
+            label1 = new Label();
+            pictureBox1 = new PictureBox();
+            TelaFundo = new Panel();
+            ImgFundo = new PictureBox();
             menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)trackBar1).BeginInit();
+            panel1.SuspendLayout();
+            panel7.SuspendLayout();
+            panel6.SuspendLayout();
+            panel5.SuspendLayout();
+            panel4.SuspendLayout();
+            panel3.SuspendLayout();
+            panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            TelaFundo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)ImgFundo).BeginInit();
             SuspendLayout();
             // 
             // menuStrip1
@@ -101,7 +130,7 @@
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.RenderMode = ToolStripRenderMode.System;
-            menuStrip1.Size = new Size(867, 25);
+            menuStrip1.Size = new Size(1198, 25);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -130,6 +159,7 @@
             // 
             // subMenuHospedesConsultar
             // 
+            subMenuHospedesConsultar.Image = (Image)resources.GetObject("subMenuHospedesConsultar.Image");
             subMenuHospedesConsultar.Name = "subMenuHospedesConsultar";
             subMenuHospedesConsultar.Size = new Size(133, 22);
             subMenuHospedesConsultar.Text = "Consultar";
@@ -150,6 +180,7 @@
             // 
             // subMenuQuartosConsultar
             // 
+            subMenuQuartosConsultar.Image = (Image)resources.GetObject("subMenuQuartosConsultar.Image");
             subMenuQuartosConsultar.Name = "subMenuQuartosConsultar";
             subMenuQuartosConsultar.Size = new Size(133, 22);
             subMenuQuartosConsultar.Text = "Consultar";
@@ -169,6 +200,7 @@
             // 
             // menuFuncionarioConsult
             // 
+            menuFuncionarioConsult.Image = (Image)resources.GetObject("menuFuncionarioConsult.Image");
             menuFuncionarioConsult.Name = "menuFuncionarioConsult";
             menuFuncionarioConsult.Size = new Size(133, 22);
             menuFuncionarioConsult.Text = "Consultar";
@@ -188,6 +220,7 @@
             // 
             // menuFornecedorConsult
             // 
+            menuFornecedorConsult.Image = (Image)resources.GetObject("menuFornecedorConsult.Image");
             menuFornecedorConsult.Name = "menuFornecedorConsult";
             menuFornecedorConsult.Size = new Size(133, 22);
             menuFornecedorConsult.Text = "Consultar";
@@ -207,6 +240,7 @@
             // 
             // menuProdutoConsult
             // 
+            menuProdutoConsult.Image = (Image)resources.GetObject("menuProdutoConsult.Image");
             menuProdutoConsult.Name = "menuProdutoConsult";
             menuProdutoConsult.Size = new Size(133, 22);
             menuProdutoConsult.Text = "Consultar";
@@ -226,6 +260,7 @@
             // 
             // menuServicoConsult
             // 
+            menuServicoConsult.Image = (Image)resources.GetObject("menuServicoConsult.Image");
             menuServicoConsult.Name = "menuServicoConsult";
             menuServicoConsult.Size = new Size(133, 22);
             menuServicoConsult.Text = "Consultar";
@@ -247,6 +282,7 @@
             // 
             // menuConsultReserva
             // 
+            menuConsultReserva.Image = (Image)resources.GetObject("menuConsultReserva.Image");
             menuConsultReserva.Name = "menuConsultReserva";
             menuConsultReserva.Size = new Size(183, 22);
             menuConsultReserva.Text = "Consultar Reserva";
@@ -265,7 +301,6 @@
             menuVendas.Name = "menuVendas";
             menuVendas.Size = new Size(78, 21);
             menuVendas.Text = "Vendas";
-            menuVendas.Click += menuConsumo_Click;
             // 
             // menuVendaProd
             // 
@@ -303,6 +338,7 @@
             // 
             // menuContaPagConsult
             // 
+            menuContaPagConsult.Image = (Image)resources.GetObject("menuContaPagConsult.Image");
             menuContaPagConsult.Name = "menuContaPagConsult";
             menuContaPagConsult.Size = new Size(133, 22);
             menuContaPagConsult.Text = "Consultar";
@@ -322,6 +358,7 @@
             // 
             // menuContaRecebConsul
             // 
+            menuContaRecebConsul.Image = (Image)resources.GetObject("menuContaRecebConsul.Image");
             menuContaRecebConsul.Name = "menuContaRecebConsul";
             menuContaRecebConsul.Size = new Size(133, 22);
             menuContaRecebConsul.Text = "Consultar";
@@ -483,29 +520,234 @@
             menuSair.Name = "menuSair";
             menuSair.Size = new Size(58, 21);
             menuSair.Text = "Sair";
+            menuSair.Click += menuSair_Click;
             // 
             // panel1
             // 
-            panel1.Location = new Point(0, 451);
+            panel1.AutoScroll = true;
+            panel1.Controls.Add(panel7);
+            panel1.Controls.Add(panel6);
+            panel1.Controls.Add(panel5);
+            panel1.Controls.Add(panel4);
+            panel1.Controls.Add(panel3);
+            panel1.Controls.Add(panel2);
+            panel1.Controls.Add(label1);
+            panel1.Controls.Add(pictureBox1);
+            panel1.Dock = DockStyle.Right;
+            panel1.Location = new Point(899, 25);
             panel1.Name = "panel1";
-            panel1.Size = new Size(867, 95);
+            panel1.Size = new Size(299, 577);
             panel1.TabIndex = 1;
+            panel1.Paint += panel1_Paint;
             // 
-            // trackBar1
+            // panel7
             // 
-            trackBar1.Location = new Point(366, 400);
-            trackBar1.Name = "trackBar1";
-            trackBar1.Size = new Size(164, 45);
-            trackBar1.TabIndex = 2;
+            panel7.Controls.Add(monthCalendar2);
+            panel7.Location = new Point(0, 640);
+            panel7.Name = "panel7";
+            panel7.Size = new Size(284, 215);
+            panel7.TabIndex = 7;
+            // 
+            // monthCalendar2
+            // 
+            monthCalendar2.Location = new Point(23, 22);
+            monthCalendar2.Name = "monthCalendar2";
+            monthCalendar2.TabIndex = 10;
+            // 
+            // panel6
+            // 
+            panel6.Controls.Add(label3);
+            panel6.Location = new Point(0, 611);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(287, 30);
+            panel6.TabIndex = 6;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Cascadia Mono", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(69, 9);
+            label3.Name = "label3";
+            label3.Size = new Size(176, 17);
+            label3.TabIndex = 11;
+            label3.Text = "Check-out de Hospedes";
+            // 
+            // panel5
+            // 
+            panel5.Controls.Add(monthCalendar1);
+            panel5.Location = new Point(3, 425);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(287, 183);
+            panel5.TabIndex = 5;
+            // 
+            // monthCalendar1
+            // 
+            monthCalendar1.Location = new Point(31, 11);
+            monthCalendar1.Name = "monthCalendar1";
+            monthCalendar1.TabIndex = 9;
+            monthCalendar1.DateChanged += monthCalendar1_DateChanged;
+            // 
+            // panel4
+            // 
+            panel4.Controls.Add(label2);
+            panel4.Location = new Point(0, 390);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(287, 34);
+            panel4.TabIndex = 4;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Cascadia Mono", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(63, 7);
+            label2.Name = "label2";
+            label2.Size = new Size(168, 17);
+            label2.TabIndex = 10;
+            label2.Text = "Check-in de Hospedes";
+            // 
+            // panel3
+            // 
+            panel3.Controls.Add(lblPerfilAcesso);
+            panel3.Controls.Add(lblNomeCargo);
+            panel3.Controls.Add(lblNomeUsuarioLogado);
+            panel3.Controls.Add(lblCargo);
+            panel3.Controls.Add(lblNamePerfilAcesso);
+            panel3.Controls.Add(lblUsuario);
+            panel3.Location = new Point(0, 266);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(287, 100);
+            panel3.TabIndex = 3;
+            // 
+            // lblPerfilAcesso
+            // 
+            lblPerfilAcesso.AutoSize = true;
+            lblPerfilAcesso.Font = new Font("Cascadia Mono", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblPerfilAcesso.Location = new Point(6, 79);
+            lblPerfilAcesso.Name = "lblPerfilAcesso";
+            lblPerfilAcesso.Size = new Size(162, 20);
+            lblPerfilAcesso.TabIndex = 7;
+            lblPerfilAcesso.Text = "Perfil de Acesso:";
+            // 
+            // lblNomeCargo
+            // 
+            lblNomeCargo.AutoSize = true;
+            lblNomeCargo.Font = new Font("Cascadia Mono SemiBold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblNomeCargo.Location = new Point(90, 49);
+            lblNomeCargo.Name = "lblNomeCargo";
+            lblNomeCargo.Size = new Size(112, 17);
+            lblNomeCargo.TabIndex = 5;
+            lblNomeCargo.Text = "Recepcionista";
+            lblNomeCargo.Click += lblNomeCargo_Click;
+            // 
+            // lblNomeUsuarioLogado
+            // 
+            lblNomeUsuarioLogado.AutoSize = true;
+            lblNomeUsuarioLogado.Font = new Font("Cascadia Mono", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblNomeUsuarioLogado.Location = new Point(90, 13);
+            lblNomeUsuarioLogado.Name = "lblNomeUsuarioLogado";
+            lblNomeUsuarioLogado.Size = new Size(40, 17);
+            lblNomeUsuarioLogado.TabIndex = 4;
+            lblNomeUsuarioLogado.Text = "Nome";
+            // 
+            // lblCargo
+            // 
+            lblCargo.AutoSize = true;
+            lblCargo.Font = new Font("Cascadia Mono SemiBold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblCargo.Location = new Point(3, 46);
+            lblCargo.Name = "lblCargo";
+            lblCargo.Size = new Size(63, 20);
+            lblCargo.TabIndex = 6;
+            lblCargo.Text = "Cargo:";
+            // 
+            // lblNamePerfilAcesso
+            // 
+            lblNamePerfilAcesso.AutoSize = true;
+            lblNamePerfilAcesso.Font = new Font("Cascadia Mono SemiBold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblNamePerfilAcesso.Location = new Point(171, 82);
+            lblNamePerfilAcesso.Name = "lblNamePerfilAcesso";
+            lblNamePerfilAcesso.Size = new Size(72, 17);
+            lblNamePerfilAcesso.TabIndex = 8;
+            lblNamePerfilAcesso.Text = "Recepção";
+            // 
+            // lblUsuario
+            // 
+            lblUsuario.AutoSize = true;
+            lblUsuario.Font = new Font("Cascadia Mono", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblUsuario.Location = new Point(3, 11);
+            lblUsuario.Name = "lblUsuario";
+            lblUsuario.Size = new Size(81, 20);
+            lblUsuario.TabIndex = 3;
+            lblUsuario.Text = "Usuário:";
+            // 
+            // panel2
+            // 
+            panel2.Controls.Add(lblDataHora);
+            panel2.Location = new Point(0, 195);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(296, 53);
+            panel2.TabIndex = 2;
+            panel2.Paint += panel2_Paint;
+            // 
+            // lblDataHora
+            // 
+            lblDataHora.AutoSize = true;
+            lblDataHora.Font = new Font("Cascadia Mono SemiBold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblDataHora.Location = new Point(62, 14);
+            lblDataHora.Name = "lblDataHora";
+            lblDataHora.Size = new Size(177, 25);
+            lblDataHora.TabIndex = 0;
+            lblDataHora.Text = "Data do Sistema";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Cascadia Mono SemiBold", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(72, 151);
+            label1.Name = "label1";
+            label1.Size = new Size(196, 32);
+            label1.TabIndex = 1;
+            label1.Text = "Hotel Manager";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(69, 3);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(181, 145);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
+            // 
+            // TelaFundo
+            // 
+            TelaFundo.Controls.Add(ImgFundo);
+            TelaFundo.Dock = DockStyle.Fill;
+            TelaFundo.Location = new Point(0, 25);
+            TelaFundo.Name = "TelaFundo";
+            TelaFundo.Size = new Size(899, 577);
+            TelaFundo.TabIndex = 2;
+            // 
+            // ImgFundo
+            // 
+            ImgFundo.BackgroundImageLayout = ImageLayout.Stretch;
+            ImgFundo.Dock = DockStyle.Fill;
+            ImgFundo.Image = (Image)resources.GetObject("ImgFundo.Image");
+            ImgFundo.Location = new Point(0, 0);
+            ImgFundo.Name = "ImgFundo";
+            ImgFundo.Size = new Size(899, 577);
+            ImgFundo.SizeMode = PictureBoxSizeMode.StretchImage;
+            ImgFundo.TabIndex = 0;
+            ImgFundo.TabStop = false;
             // 
             // TelaPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(867, 544);
-            Controls.Add(trackBar1);
+            ClientSize = new Size(1198, 602);
+            Controls.Add(TelaFundo);
             Controls.Add(panel1);
             Controls.Add(menuStrip1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             MainMenuStrip = menuStrip1;
             Name = "TelaPrincipal";
             StartPosition = FormStartPosition.CenterScreen;
@@ -514,7 +756,21 @@
             Load += TelaPrincipal_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)trackBar1).EndInit();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            panel7.ResumeLayout(false);
+            panel6.ResumeLayout(false);
+            panel6.PerformLayout();
+            panel5.ResumeLayout(false);
+            panel4.ResumeLayout(false);
+            panel4.PerformLayout();
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            TelaFundo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)ImgFundo).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -580,6 +836,26 @@
         private ToolStripMenuItem apagarImagemToolStripMenuItem;
         private ToolStripMenuItem restaurarPadrãoToolStripMenuItem;
         private Panel panel1;
-        private TrackBar trackBar1;
+        private PictureBox pictureBox1;
+        private Label label1;
+        private Panel panel2;
+        private Label lblDataHora;
+        private Label lblCargo;
+        private Label lblNomeCargo;
+        private Label lblNomeUsuarioLogado;
+        private Label lblUsuario;
+        private Label lblNamePerfilAcesso;
+        private Label lblPerfilAcesso;
+        private MonthCalendar monthCalendar1;
+        private Label label2;
+        private Panel panel4;
+        private Panel panel3;
+        private Panel panel5;
+        private Panel panel7;
+        private MonthCalendar monthCalendar2;
+        private Panel panel6;
+        private Label label3;
+        private Panel TelaFundo;
+        private PictureBox ImgFundo;
     }
 }
