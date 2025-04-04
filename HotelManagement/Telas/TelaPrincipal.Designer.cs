@@ -39,7 +39,7 @@
             subMenuQuartosCadastrar = new ToolStripMenuItem();
             subMenuQuartosConsultar = new ToolStripMenuItem();
             MenuCadFuncionario = new ToolStripMenuItem();
-            menuFuncionarioCad = new ToolStripMenuItem();
+            menuCadFunc = new ToolStripMenuItem();
             menuFuncionarioConsult = new ToolStripMenuItem();
             MenuCadFornecedor = new ToolStripMenuItem();
             menuFornecedorCad = new ToolStripMenuItem();
@@ -148,20 +148,21 @@
             subMenuHospedes.DropDownItems.AddRange(new ToolStripItem[] { subMenuHospedesCadastrar, subMenuHospedesConsultar });
             subMenuHospedes.Image = (Image)resources.GetObject("subMenuHospedes.Image");
             subMenuHospedes.Name = "subMenuHospedes";
-            subMenuHospedes.Size = new Size(156, 22);
+            subMenuHospedes.Size = new Size(180, 22);
             subMenuHospedes.Text = "Hospedes";
             // 
             // subMenuHospedesCadastrar
             // 
+            subMenuHospedesCadastrar.Image = (Image)resources.GetObject("subMenuHospedesCadastrar.Image");
             subMenuHospedesCadastrar.Name = "subMenuHospedesCadastrar";
-            subMenuHospedesCadastrar.Size = new Size(133, 22);
+            subMenuHospedesCadastrar.Size = new Size(180, 22);
             subMenuHospedesCadastrar.Text = "Cadastrar";
             // 
             // subMenuHospedesConsultar
             // 
             subMenuHospedesConsultar.Image = (Image)resources.GetObject("subMenuHospedesConsultar.Image");
             subMenuHospedesConsultar.Name = "subMenuHospedesConsultar";
-            subMenuHospedesConsultar.Size = new Size(133, 22);
+            subMenuHospedesConsultar.Size = new Size(180, 22);
             subMenuHospedesConsultar.Text = "Consultar";
             // 
             // subMenuQuartos
@@ -169,100 +170,106 @@
             subMenuQuartos.DropDownItems.AddRange(new ToolStripItem[] { subMenuQuartosCadastrar, subMenuQuartosConsultar });
             subMenuQuartos.Image = (Image)resources.GetObject("subMenuQuartos.Image");
             subMenuQuartos.Name = "subMenuQuartos";
-            subMenuQuartos.Size = new Size(156, 22);
+            subMenuQuartos.Size = new Size(180, 22);
             subMenuQuartos.Text = "Quartos";
             // 
             // subMenuQuartosCadastrar
             // 
+            subMenuQuartosCadastrar.Image = (Image)resources.GetObject("subMenuQuartosCadastrar.Image");
             subMenuQuartosCadastrar.Name = "subMenuQuartosCadastrar";
-            subMenuQuartosCadastrar.Size = new Size(133, 22);
+            subMenuQuartosCadastrar.Size = new Size(180, 22);
             subMenuQuartosCadastrar.Text = "Cadastrar";
             // 
             // subMenuQuartosConsultar
             // 
             subMenuQuartosConsultar.Image = (Image)resources.GetObject("subMenuQuartosConsultar.Image");
             subMenuQuartosConsultar.Name = "subMenuQuartosConsultar";
-            subMenuQuartosConsultar.Size = new Size(133, 22);
+            subMenuQuartosConsultar.Size = new Size(180, 22);
             subMenuQuartosConsultar.Text = "Consultar";
             // 
             // MenuCadFuncionario
             // 
-            MenuCadFuncionario.DropDownItems.AddRange(new ToolStripItem[] { menuFuncionarioCad, menuFuncionarioConsult });
+            MenuCadFuncionario.DropDownItems.AddRange(new ToolStripItem[] { menuCadFunc, menuFuncionarioConsult });
             MenuCadFuncionario.Name = "MenuCadFuncionario";
-            MenuCadFuncionario.Size = new Size(156, 22);
+            MenuCadFuncionario.Size = new Size(180, 22);
             MenuCadFuncionario.Text = "Funcionários";
             // 
-            // menuFuncionarioCad
+            // menuCadFunc
             // 
-            menuFuncionarioCad.Name = "menuFuncionarioCad";
-            menuFuncionarioCad.Size = new Size(133, 22);
-            menuFuncionarioCad.Text = "Cadastrar";
+            menuCadFunc.Image = (Image)resources.GetObject("menuCadFunc.Image");
+            menuCadFunc.Name = "menuCadFunc";
+            menuCadFunc.Size = new Size(180, 22);
+            menuCadFunc.Text = "Cadastrar";
+            menuCadFunc.Click += menuCadFunc_Click;
             // 
             // menuFuncionarioConsult
             // 
             menuFuncionarioConsult.Image = (Image)resources.GetObject("menuFuncionarioConsult.Image");
             menuFuncionarioConsult.Name = "menuFuncionarioConsult";
-            menuFuncionarioConsult.Size = new Size(133, 22);
+            menuFuncionarioConsult.Size = new Size(180, 22);
             menuFuncionarioConsult.Text = "Consultar";
             // 
             // MenuCadFornecedor
             // 
             MenuCadFornecedor.DropDownItems.AddRange(new ToolStripItem[] { menuFornecedorCad, menuFornecedorConsult });
             MenuCadFornecedor.Name = "MenuCadFornecedor";
-            MenuCadFornecedor.Size = new Size(156, 22);
+            MenuCadFornecedor.Size = new Size(180, 22);
             MenuCadFornecedor.Text = "Fornecedores";
             // 
             // menuFornecedorCad
             // 
+            menuFornecedorCad.Image = (Image)resources.GetObject("menuFornecedorCad.Image");
             menuFornecedorCad.Name = "menuFornecedorCad";
-            menuFornecedorCad.Size = new Size(133, 22);
+            menuFornecedorCad.Size = new Size(180, 22);
             menuFornecedorCad.Text = "Cadastrar";
             // 
             // menuFornecedorConsult
             // 
             menuFornecedorConsult.Image = (Image)resources.GetObject("menuFornecedorConsult.Image");
             menuFornecedorConsult.Name = "menuFornecedorConsult";
-            menuFornecedorConsult.Size = new Size(133, 22);
+            menuFornecedorConsult.Size = new Size(180, 22);
             menuFornecedorConsult.Text = "Consultar";
             // 
             // MenuCadProduto
             // 
             MenuCadProduto.DropDownItems.AddRange(new ToolStripItem[] { menuProdutoCad, menuProdutoConsult });
             MenuCadProduto.Name = "MenuCadProduto";
-            MenuCadProduto.Size = new Size(156, 22);
+            MenuCadProduto.Size = new Size(180, 22);
             MenuCadProduto.Text = "Produtos";
             // 
             // menuProdutoCad
             // 
+            menuProdutoCad.Image = (Image)resources.GetObject("menuProdutoCad.Image");
             menuProdutoCad.Name = "menuProdutoCad";
-            menuProdutoCad.Size = new Size(133, 22);
+            menuProdutoCad.Size = new Size(180, 22);
             menuProdutoCad.Text = "Cadastrar";
             // 
             // menuProdutoConsult
             // 
             menuProdutoConsult.Image = (Image)resources.GetObject("menuProdutoConsult.Image");
             menuProdutoConsult.Name = "menuProdutoConsult";
-            menuProdutoConsult.Size = new Size(133, 22);
+            menuProdutoConsult.Size = new Size(180, 22);
             menuProdutoConsult.Text = "Consultar";
             // 
             // MenuCadServico
             // 
             MenuCadServico.DropDownItems.AddRange(new ToolStripItem[] { menuServicoCad, menuServicoConsult });
             MenuCadServico.Name = "MenuCadServico";
-            MenuCadServico.Size = new Size(156, 22);
+            MenuCadServico.Size = new Size(180, 22);
             MenuCadServico.Text = "Serviços";
             // 
             // menuServicoCad
             // 
+            menuServicoCad.Image = (Image)resources.GetObject("menuServicoCad.Image");
             menuServicoCad.Name = "menuServicoCad";
-            menuServicoCad.Size = new Size(133, 22);
+            menuServicoCad.Size = new Size(180, 22);
             menuServicoCad.Text = "Cadastrar";
             // 
             // menuServicoConsult
             // 
             menuServicoConsult.Image = (Image)resources.GetObject("menuServicoConsult.Image");
             menuServicoConsult.Name = "menuServicoConsult";
-            menuServicoConsult.Size = new Size(133, 22);
+            menuServicoConsult.Size = new Size(180, 22);
             menuServicoConsult.Text = "Consultar";
             // 
             // menuReservas
@@ -327,7 +334,7 @@
             // 
             MenuContaPagar.DropDownItems.AddRange(new ToolStripItem[] { menuContaPagCad, menuContaPagConsult });
             MenuContaPagar.Name = "MenuContaPagar";
-            MenuContaPagar.Size = new Size(179, 22);
+            MenuContaPagar.Size = new Size(180, 22);
             MenuContaPagar.Text = "Contas a Pagar";
             // 
             // menuContaPagCad
@@ -347,7 +354,7 @@
             // 
             MenuContaReceb.DropDownItems.AddRange(new ToolStripItem[] { menuContaRecebCad, menuContaRecebConsul });
             MenuContaReceb.Name = "MenuContaReceb";
-            MenuContaReceb.Size = new Size(179, 22);
+            MenuContaReceb.Size = new Size(180, 22);
             MenuContaReceb.Text = "Contas a Receber";
             // 
             // menuContaRecebCad
@@ -366,7 +373,7 @@
             // MenuBalanco
             // 
             MenuBalanco.Name = "MenuBalanco";
-            MenuBalanco.Size = new Size(179, 22);
+            MenuBalanco.Size = new Size(180, 22);
             MenuBalanco.Text = "Balanço";
             // 
             // menuRelatorios
@@ -538,7 +545,6 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(299, 577);
             panel1.TabIndex = 1;
-            panel1.Paint += panel1_Paint;
             // 
             // panel7
             // 
@@ -585,7 +591,6 @@
             monthCalendar1.Location = new Point(31, 11);
             monthCalendar1.Name = "monthCalendar1";
             monthCalendar1.TabIndex = 9;
-            monthCalendar1.DateChanged += monthCalendar1_DateChanged;
             // 
             // panel4
             // 
@@ -637,7 +642,6 @@
             lblNomeCargo.Size = new Size(112, 17);
             lblNomeCargo.TabIndex = 5;
             lblNomeCargo.Text = "Recepcionista";
-            lblNomeCargo.Click += lblNomeCargo_Click;
             // 
             // lblNomeUsuarioLogado
             // 
@@ -686,7 +690,6 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(296, 53);
             panel2.TabIndex = 2;
-            panel2.Paint += panel2_Paint;
             // 
             // lblDataHora
             // 
@@ -793,7 +796,7 @@
         private ToolStripMenuItem subMenuQuartosCadastrar;
         private ToolStripMenuItem subMenuQuartosConsultar;
         private ToolStripMenuItem MenuCadFuncionario;
-        private ToolStripMenuItem menuFuncionarioCad;
+        private ToolStripMenuItem menuCadFunc;
         private ToolStripMenuItem menuFuncionarioConsult;
         private ToolStripMenuItem MenuCadFornecedor;
         private ToolStripMenuItem menuFornecedorCad;

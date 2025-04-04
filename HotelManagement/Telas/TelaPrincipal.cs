@@ -34,27 +34,8 @@ namespace HotelManagement.Telas
             this.Controls.Add(rodape);
         }
 
-        private void lblNomeCargo_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void TelaPrincipal_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
         }
@@ -62,6 +43,17 @@ namespace HotelManagement.Telas
         private void menuSair_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void menuCadFunc_Click(object sender, EventArgs e)
+        {
+            TelaCadFuncionario telaCadFuncionario = new TelaCadFuncionario();
+
+            TelaFundo.Controls.Clear();
+
+            TelaFundo.Controls.Add(telaCadFuncionario);
+
+
         }
     }
 }
